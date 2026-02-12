@@ -48,10 +48,11 @@ function handleClick(){
 }
 
 function audio(btn){
-    new Audio("sounds/"+btn+".mp3").play();
+    new Audio("+btn+".mp3").play();
 }
 
 function simonSays(btn){
     $("." + btn).addClass("pressed-simon");
     setTimeout(function(){$("."+ btn).removeClass("pressed-simon");}, 350);
+
 }
